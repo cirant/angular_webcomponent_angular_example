@@ -33,7 +33,7 @@ export class AppComponent {
 
   tableDiagnostico = {
     headers: {
-      // checkboxArea: "",
+      checkbox: false,
       diagnostico: "Nombre del diagnóstico",
       estado: "Estado",
       fecha: "Fecha",
@@ -43,7 +43,7 @@ export class AppComponent {
     },
     body: [
       {
-        // checkboxArea: "active",
+        checkbox: false,
         diagnostico: {
           variant: "p",
           type: "primary",
@@ -84,7 +84,7 @@ export class AppComponent {
         ]
       },
       {
-        // checkboxArea: "active",
+        checkbox: false,
         diagnostico: {
           variant: "p",
           type: "primary",
@@ -125,7 +125,7 @@ export class AppComponent {
         ]
       },
       {
-        // checkboxArea: "active",
+        checkbox: false,
         diagnostico: {
           variant: "p",
           type: "primary",
