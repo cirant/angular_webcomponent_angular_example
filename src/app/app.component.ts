@@ -165,14 +165,6 @@ export class AppComponent {
               alert('eliminar')
             }
           },
-          {
-            text: "agregar",
-            variant: "text",
-            icon: "trash",
-            onClick: function () {
-              alert('eliminar')
-            }
-          }
         ]
       }
     ]
