@@ -176,7 +176,50 @@ export class AppComponent {
     ]
   }
 
+
   buttonAction() {
     alert('click');
+    this.tableDiagnostico.body.push({
+      checkbox: false,
+      diagnostico: {
+        variant: "p",
+        type: "primary",
+        text:
+          "Afecciones respiratorias debidas a inhalación de gases, humos…"
+      },
+      estado: "confirmado",
+      fecha: {
+        size: "",
+        text: "2014-12-24  24:15:00"
+      },
+      eno: {
+        weight: "bold",
+        text: "ENO"
+      },
+      ges: {
+        weight: "bold",
+        text: "GES"
+      },
+      acciones: [
+        {
+          text: "Editar",
+          variant: "text",
+          icon: "edit",
+          onClick: function () {
+            alert('editar')
+          }
+        },
+        {
+          text: "Eliminar",
+          variant: "text",
+          color: "error",
+          icon: "trash",
+          onClick: function () {
+            alert('eliminar')
+          }
+        }
+      ]
+    });
   }
+
 }
