@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hola mundo';
+  showModal = false;
+
   tableData = {
     headers: {
       checkboxArea: "",
@@ -174,18 +176,26 @@ export class AppComponent {
         ]
       }
     ]
-  }
-
+  };
 
   buttonAction() {
-    alert('click');
-    this.tableDiagnostico.body.push({
+    this.showModal = true;
+  }
+
+  closeModal() {
+    this.showModal = false;
+  }
+
+  addElementToTable(e) {
+    const elementToAdd = e.detail[0];
+
+    this.tableDiagnostico.body.unshift({
       checkbox: false,
       diagnostico: {
         variant: "p",
         type: "primary",
         text:
-          "Afecciones respiratorias debidas a inhalación de gases, humos…"
+          elementToAdd.medicalDiagnostic.name
       },
       estado: "confirmado",
       fecha: {
@@ -220,6 +230,6 @@ export class AppComponent {
         }
       ]
     });
-  }
 
+  };
 }
