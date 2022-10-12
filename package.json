@@ -27,7 +27,7 @@
     "alemana-component": "https://github.com/cirant/alemania-component.git"
   },
   "devDependencies": {
-    "@angular/cli": "1.1.3",
+    "@angular/cli": "1.7.4",
     "@angular/compiler-cli": "^4.0.0",
     "@angular/language-service": "^4.0.0",
     "@types/jasmine": "2.5.45",
